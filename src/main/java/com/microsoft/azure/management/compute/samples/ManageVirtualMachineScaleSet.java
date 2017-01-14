@@ -259,7 +259,7 @@ public final class ManageVirtualMachineScaleSet {
                 // Utils.print(virtualMachineScaleSet);
 
                 //=============================================================
-                // Lists virtual machine scale set network interfaces
+                // List virtual machine scale set network interfaces
 
                 System.out.println("Listing scale set network interfaces ...");
                 PagedList<VirtualMachineScaleSetNetworkInterface> vmssNics = virtualMachineScaleSet.listNetworkInterfaces();
@@ -268,7 +268,7 @@ public final class ManageVirtualMachineScaleSet {
                 }
 
                 //=============================================================
-                // Lists virtual machine scale set instance network interfaces and SSH connection string
+                // List virtual machine scale set instance network interfaces and SSH connection string
 
                 System.out.println("Listing scale set virtual machine instance network interfaces and SSH connection string...");
                 for (VirtualMachineScaleSetVM instance : virtualMachineScaleSet.virtualMachines().list()) {
@@ -286,8 +286,8 @@ public final class ManageVirtualMachineScaleSet {
                                     break;
                                 }
                             }
+                            break;
                         }
-                        break;
                     }
                 }
 
